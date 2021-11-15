@@ -31,35 +31,22 @@ function updateClock(){
     document.getElementById("format").innerHTML = timeOfDay;
 
 }
-
-let rotate = document.getElementById("rotate-arrow");
-let rotate1 = document.getElementById("rotate-arrow-1");
-let rotate2 = document.getElementById("rotate-arrow-2");
-var rotateClick = false;
-rotate.addEventListener('click', ()=>{
-    if(rotateClick){
-        rotate.style.transform = 'rotate(0deg)';
+let settime=document.getElementById("btn_id");
+settime.addEventListener('click',()=>{
+    let inValue = document.getElementById("setWakeupTime").value;
+    let inValue1 = document.getElementById("setLunchTime").value;
+    let inValue2 = document.getElementById("setSnapTime").value;
+    let hr = new Date().getHours();
+    if(inValue==hr){
+        document.getElementById("wake_time_is").style.display="block";
+        document.getElementById("wake_title_here").style.display="block";
     }
-    else{
-        rotate.style.transform = 'rotate(180deg)';
+    else if(inValue1==hr){
+        document.getElementById("lunch_time_is").style.display="block";
+        document.getElementById("lunch_title_here").style.display="block";
     }
-    rotateClick =!rotateClick;
-})
-rotate1.addEventListener('click', ()=>{
-    if(rotateClick){
-        rotate1.style.transform = 'rotate(0deg)';
+    else if(inValue2==hr){
+        document.getElementById("snap_time_is").style.display="block";
+        document.getElementById("sleep_title_here").style.display="block";
     }
-    else{
-        rotate1.style.transform = 'rotate(180deg)';
-    }
-    rotateClick =!rotateClick;
-})
-rotate2.addEventListener('click', ()=>{
-    if(rotateClick){
-        rotate2.style.transform = 'rotate(0deg)';
-    }
-    else{
-        rotate2.style.transform = 'rotate(180deg)';
-    }
-    rotateClick =!rotateClick;
-})
+});

@@ -134,6 +134,19 @@ body {
   margin-left: 21px;
   margin-top: -85px;
   position: relative;
+  width: 459px;
+  height: 430px;
+  background-color: white;
+  border-radius: 9px;
+}
+.container .img-show #wake_time_is{
+  display: none;
+}
+.container .img-show #lunch_time_is{
+  display: none;
+}
+.container .img-show #snap_time_is{
+  display: none;
 }
 .container .img-show h2 {
   position: absolute;
@@ -171,6 +184,51 @@ body {
   width: 229px;
   z-index: 1;
 }
+.container .time-table .set-wakeUp .logo-wakeUp .wakeup-time .set_wakup_option {
+  width: 235px;
+  border: white;
+  cursor: pointer;
+  color: #8e53f0;
+}
+.container
+  .time-table
+  .set-wakeUp
+  .logo-wakeUp
+  .wakeup-time
+  .set_wakup_option
+  option {
+  color: black;
+}
+.container
+  .time-table
+  .set-wakeUp
+  .logo-wakeUp
+  .lunch-time
+  .set_wakup_option
+  option {
+  color: black;
+}
+.container
+  .time-table
+  .set-wakeUp
+  .logo-wakeUp
+  .snap-time
+  .set_wakup_option
+  option {
+  color: black;
+}
+.container .time-table .set-wakeUp .logo-wakeUp .lunch-time .set_wakup_option {
+  width: 235px;
+  border: white;
+  cursor: pointer;
+  color: #8e53f0;
+}
+.container .time-table .set-wakeUp .logo-wakeUp .snap-time .set_wakup_option {
+  width: 235px;
+  border: white;
+  cursor: pointer;
+  color: #8e53f0;
+}
 .container .time-table .set-wakeUp .logo-wakeUp .wakeup-time span {
   float: right;
   color: rebeccapurple;
@@ -180,29 +238,6 @@ body {
 .container .time-table .set-wakeUp .logo-wakeUp .wakeup-time label {
   font-size: 13px;
   color: rebeccapurple;
-}
-.container .time-table .set-wakeUp .logo-wakeUp .wakeup-time .time-menu {
-  position: absolute;
-  top: 28px;
-  background: white;
-  list-style: none;
-  width: 100%;
-  border-radius: 3px;
-  padding: 17px 9px;
-  box-shadow: 1px 6px 8px -2px grey;
-  display: none;
-}
-.container .time-table .set-wakeUp .logo-wakeUp .lunch-time .time-menu-1{
-  position: absolute;
-  top: 28px;
-  background: white;
-  list-style: none;
-  width: 100%;
-  border-radius: 3px;
-  padding: 17px 9px;
-  box-shadow: 1px 6px 8px -2px grey;
-  display: none;
-  z-index: 1;
 }
 .container .time-table .set-wakeUp .logo-wakeUp .lunch-time label {
   font-size: 13px;
@@ -216,31 +251,11 @@ body {
   top: 32px;
   width: 229px;
 }
-.container .time-table .set-wakeUp .logo-wakeUp .lunch-time  span {
+.container .time-table .set-wakeUp .logo-wakeUp .lunch-time span {
   float: right;
   color: rebeccapurple;
   line-height: 18px;
   cursor: pointer;
-}
-.container .time-table .set-wakeUp .logo-wakeUp .lunch-time .time-menu-1 li {
-  padding: 6px 3px;
-  font-size: 14px;
-}
-.container .time-table .set-wakeUp .logo-wakeUp .lunch-time .time-menu-1 li:hover {
-  cursor: pointer;
-  color: cyan;
-  transition: .5s all ease-in-out;
-}
-.container .time-table .set-wakeUp .logo-wakeUp .snap-time .time-menu-2{
-  position: absolute;
-  top: 28px;
-  background: white;
-  list-style: none;
-  width: 100%;
-  border-radius: 3px;
-  padding: 17px 9px;
-  box-shadow: 1px 6px 8px -2px grey;
-  display: none;
 }
 .container .time-table .set-wakeUp .logo-wakeUp .snap-time label {
   font-size: 13px;
@@ -254,41 +269,11 @@ body {
   top: 32px;
   width: 229px;
 }
-.container .time-table .set-wakeUp .logo-wakeUp .snap-time  span {
+.container .time-table .set-wakeUp .logo-wakeUp .snap-time span {
   float: right;
   color: rebeccapurple;
   line-height: 18px;
   cursor: pointer;
-}
-.container .time-table .set-wakeUp .logo-wakeUp .snap-time .time-menu-2 li {
-  padding: 6px 3px;
-  font-size: 14px;
-}
-.container .time-table .set-wakeUp .logo-wakeUp .snap-time .time-menu-2 li:hover {
-  cursor: pointer;
-  color: cyan;
-  transition: .5s all ease-in-out;
-}
-#down:checked + ul {
-  display: block;
-}
-#down-1:checked + ul {
-  display: block;
-}
-#down-2:checked + ul {
-  display: block;
-}
-.container .time-table .set-wakeUp .logo-wakeUp .wakeup-time .time-menu li {
-  padding: 6px 3px;
-  font-size: 14px;
-}
-.container .time-table .set-wakeUp .logo-wakeUp .wakeup-time .time-menu li:hover {
-  cursor: pointer;
-  color: cyan;
-  transition: .5s all ease-in-out;
-}
-input{
-  display: none;
 }
 .alert-bar {
   height: 65px;
@@ -296,16 +281,17 @@ input{
   background-color: #6a419a;
   margin-left: 174px;
   border-radius: 10px;
-  margin-top: -136px;
+  margin-top: 15px;
 }
 .alert-bar h2 {
   color: white;
   padding: 20px;
+  display: none;
 }
 
 .button {
   margin-left: 176px;
-  margin-top: 17px;
+  margin-top: -123px;
   border-radius: 6px;
 }
 .button .btn {
